@@ -6,15 +6,15 @@ class HashTable(var cardinality: Int, var hashFunction: Int, var prime: Long) {
 
   def calculateHash(in: String): Int = {
 
-    val charMap = in.toIterator.map(_.toInt)
+    val charMap = in.toArray.map(_.toInt)
     var add = 0D
-    var power = 0
-    while (charMap.hasNext) {
-      val nezt = charMap.next()
-      add += nezt * math.pow(hashFunction, power)
-      power += 1
+    for (m <- 0 until charMap.length) {
+      val nezt = charMap(m)
+      add += nezt * math.pow(hashFunction, m)
+//      println("added value" + add)
     }
-    (add % prime % cardinality).toInt
+//    println("before to Int: " + ((add % prime) % cardinality))
+    math.round((add % prime) % cardinality).toInt
   }
 
   def add(in: String): Unit = {
@@ -51,11 +51,7 @@ class HashTable(var cardinality: Int, var hashFunction: Int, var prime: Long) {
   }
 
   def check(in: Int): String = {
-    if (hashTable.isEmpty || hashTable(in).isEmpty) {
-      " "
-    } else {
-      hashTable(in).toList.mkString(" ")
-    }
+    hashTable(in).toList.mkString(" ")
   }
 
 
