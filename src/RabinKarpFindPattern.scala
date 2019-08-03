@@ -1,7 +1,9 @@
 import scala.collection.mutable.ArrayBuffer
 import scala.util.control.Breaks
 
-class RabinKarpFindPattern {
+class RabinKarpFindPattern(var prime: Int) {
+  val hashFunction = scala.util.Random.nextInt(5000)
+
   def areEqual(subString: String, pattern: String): Boolean = {
     var check = true
     if (subString.length != pattern.length) {
@@ -22,7 +24,7 @@ class RabinKarpFindPattern {
     }
   }
 
-  def polyHash(pattern: String, prime: Int, hashFunction: Int): Long = {
+  def polyHash(pattern: String): Long = {
     var hash = 0L
     val patternArr = pattern.toArray.map(x => charHash(x))
     for (i <- (0 until pattern.length).reverse) {
@@ -35,30 +37,37 @@ class RabinKarpFindPattern {
     char.toInt
   }
 
-  def precomputeHash(text: String, patternLength: Int, prime: Int, hashFunction: Int): Array[Long] = {
+  def precomputeHash(text: String, patternLength: Int): Array[Long] = {
     val prehashedArr = Array.ofDim[Long](text.length - patternLength + 1)
     val lastPattern = text.substring(text.length - patternLength, text.length)
     //Update last element of prehashed array
-    prehashedArr.update(text.length - patternLength, polyHash(lastPattern, prime, hashFunction))
+//    println("last pattern is : " + lastPattern + " with hashed value: " + polyHash(lastPattern))
+    prehashedArr.update(text.length - patternLength, polyHash(lastPattern))
     var const = 1L
-    for (i <- 1 until patternLength) {
+    for (i <- 0 until patternLength) {
       const = modulos(const * hashFunction, prime)
+//      println("constant calculated: " +  const)
     }
-    for (k <- (0 until text.length - patternLength - 1).reverse) {
-      val toUpdate = hashFunction * prehashedArr(k + 1) + charHash(text(k)) - const * charHash(text(k + patternLength))
+
+//    println("constant is " + const)
+    for (k <- (0 until text.length - patternLength ).reverse) {
+
+      val toUpdate = hashFunction * prehashedArr(k + 1)  + charHash(text(k)) - modulos(const * charHash(text(k + patternLength)), prime)
       prehashedArr.update(k, modulos(toUpdate, prime))
+//      println("hashfunction at point " + k + " is " + hashFunction)
+//      println("hashed text at point " + k + " :" + text.substring(k, k + patternLength) + " with hashed code: " + modulos(toUpdate, prime) + " actual poly hash value is " + polyHash(text.substring(k, k + patternLength)))
+
     }
     prehashedArr
   }
 
-  def findPattern(text: String, pattern: String, prime: Int): Array[Int] = {
-    val hashFunction = scala.util.Random.nextInt(prime - 1)
+  def findPattern(text: String, pattern: String): Array[Int] = {
     val result = new ArrayBuffer[Int]
-    val hashedPattern = polyHash(pattern, prime, hashFunction)
-    val precomputedHashArr = precomputeHash(text, pattern.length, prime, hashFunction)
+    val hashedPattern = polyHash(pattern)
+    val precomputedHashArr = precomputeHash(text, pattern.length)
     for (i <- 0 until text.length - pattern.length) {
       if (hashedPattern == precomputedHashArr(i)) {
-        if (areEqual(text.substring(i, pattern.length), pattern)) {
+        if (areEqual(text.substring(i, i+ pattern.length), pattern)) {
           result.append(i)
         }
       }

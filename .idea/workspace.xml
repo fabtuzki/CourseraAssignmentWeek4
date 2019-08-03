@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="621c4e55-9330-4fa5-98a5-bf0adcb8369d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/FindPatternInText.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RabinKarpFindPattern.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CourseraAssignmentWeek4/HashTable$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CourseraAssignmentWeek4/HashTable$$anonfun$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CourseraAssignmentWeek4/HashTable$$anonfun$calculateHash$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CourseraAssignmentWeek4/HashTable$$anonfun$calculateHash$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CourseraAssignmentWeek4/HashTable$$anonfun$find$1$$anonfun$apply$mcV$sp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CourseraAssignmentWeek4/HashTable$$anonfun$find$1$$anonfun$apply$mcV$sp$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CourseraAssignmentWeek4/HashTable$$anonfun$find$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CourseraAssignmentWeek4/HashTable$$anonfun$find$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CourseraAssignmentWeek4/HashTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CourseraAssignmentWeek4/HashTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CourseraAssignmentWeek4/HashWithChains$$anonfun$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CourseraAssignmentWeek4/HashWithChains$$anonfun$calculateHashTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CourseraAssignmentWeek4/HashWithChains$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CourseraAssignmentWeek4/HashWithChains$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CourseraAssignmentWeek4/HashWithChains.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CourseraAssignmentWeek4/HashWithChains.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HashTable.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashTable.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HashWithChains.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashWithChains.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FindPatternInText.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/FindPatternInText.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RabinKarpFindPattern.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/RabinKarpFindPattern.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,35 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PhoneBook.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#0#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HashWithChains.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1404">
-              <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FindPatternInText.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="154">
+              <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -65,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RabinKarpFindPattern.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="53" column="76" lean-forward="true" selection-start-line="53" selection-start-column="76" selection-end-line="53" selection-end-column="76" />
+            <state relative-caret-position="211">
+              <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -85,15 +49,16 @@
         <option value="$PROJECT_DIR$/src/PhoneBook.scala" />
         <option value="$PROJECT_DIR$/src/HashTable.scala" />
         <option value="$PROJECT_DIR$/src/HashWithChains.scala" />
-        <option value="$PROJECT_DIR$/src/RabinKarpFindPattern.scala" />
         <option value="$PROJECT_DIR$/src/FindPatternInText.scala" />
+        <option value="$PROJECT_DIR$/src/RabinKarpFindPattern.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="1317" />
-    <option name="height" value="1057" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -101,12 +66,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="CourseraAssignmentWeek4" type="b2602c69:ProjectViewProjectNode" />
               <item name="CourseraAssignmentWeek4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CourseraAssignmentWeek4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CourseraAssignmentWeek4" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CourseraAssignmentWeek4" type="b2602c69:ProjectViewProjectNode" />
@@ -118,7 +89,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -177,10 +147,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.015991472" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18585297" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -189,7 +159,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3108253" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.51699716" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45609066" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -224,8 +194,8 @@
     <entry file="jar://C:/Program Files (x86)/scala/lib/scala-library.jar!/scala/collection/immutable/Range.class" />
     <entry file="file://$PROJECT_DIR$/src/HashWithChains.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1404">
-          <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        <state relative-caret-position="1210">
+          <caret line="55" column="3" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
@@ -239,27 +209,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/FileInputStream.java" />
     <entry file="file://$PROJECT_DIR$/src/RabinKarpFindPattern.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="53" column="76" lean-forward="true" selection-start-line="53" selection-start-column="76" selection-end-line="53" selection-end-column="76" />
+        <state relative-caret-position="211">
+          <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/FileInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="194" selection-start-line="194" selection-end-line="194" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FindPatternInText.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="154">
+          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
         </state>
       </provider>
     </entry>
