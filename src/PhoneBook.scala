@@ -6,7 +6,9 @@ object PhoneBook {
   val phoneBook = new HashMap[Int, String]
 
   def main(args: Array[String]): Unit = {
-    val source = Source.fromFile("")
+    val input = Source.stdin.getLines().toArray.drop(1)
+    input.foreach(x => action(x))
+    output.foreach(x => println(x))
 
   }
 
