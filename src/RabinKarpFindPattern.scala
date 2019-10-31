@@ -13,7 +13,7 @@ class RabinKarpFindPattern(var prime: Int) {
       loop.breakable {
         for (i <- 0 until pattern.length) {
           if (pattern(i) != subString(i)) {
-            var check = false
+            check = false
             loop.break()
           }
 
